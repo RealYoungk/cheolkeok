@@ -58112,7 +58112,8 @@ a7=q.f
 a7===$&&A.b()
 a7.n(0,d)
 for(d=[c,a2,j,a6,a3],a7=d.length,f=0;f<a7;++f)m.push(d[f])
-a3.z=a6.z=!1
+p.m(0,a6,"radio")
+p.m(0,a3,"armchair")
 p.m(0,c,"note")
 m=n.h(0,"desk")
 m.toString
