@@ -1,0 +1,104 @@
+{
+  "schema": 3,
+  "package": "escape_room",
+  "entries": [
+    {
+      "family": "scene",
+      "id": "assets/models/bookcaseClosedDoors",
+      "file": "scene.bookcaseClosedDoors.ceb4e40d.fsceneb",
+      "stamp": "ccf2f3e3897eb3cd",
+      "source": "assets/models/bookcaseClosedDoors.glb"
+    },
+    {
+      "family": "scene",
+      "id": "assets/models/bookcaseOpen",
+      "file": "scene.bookcaseOpen.a3e50f9d.fsceneb",
+      "stamp": "644bb57f7a050ce6",
+      "source": "assets/models/bookcaseOpen.glb"
+    },
+    {
+      "family": "scene",
+      "id": "assets/models/books",
+      "file": "scene.books.e8a2fb2e.fsceneb",
+      "stamp": "6930fe73825c2560",
+      "source": "assets/models/books.glb"
+    },
+    {
+      "family": "scene",
+      "id": "assets/models/cardboardBoxClosed",
+      "file": "scene.cardboardBoxClosed.6afe936c.fsceneb",
+      "stamp": "ac4bc82f53266519",
+      "source": "assets/models/cardboardBoxClosed.glb"
+    },
+    {
+      "family": "scene",
+      "id": "assets/models/ceilingFan",
+      "file": "scene.ceilingFan.c1d37051.fsceneb",
+      "stamp": "137ab426739a2a6e",
+      "source": "assets/models/ceilingFan.glb"
+    },
+    {
+      "family": "scene",
+      "id": "assets/models/chairDesk",
+      "file": "scene.chairDesk.41ec8cc6.fsceneb",
+      "stamp": "92a9ead868de60be",
+      "source": "assets/models/chairDesk.glb"
+    },
+    {
+      "family": "scene",
+      "id": "assets/models/coatRackStanding",
+      "file": "scene.coatRackStanding.3aa83146.fsceneb",
+      "stamp": "675766d41c9d177b",
+      "source": "assets/models/coatRackStanding.glb"
+    },
+    {
+      "family": "scene",
+      "id": "assets/models/desk",
+      "file": "scene.desk.f71d7104.fsceneb",
+      "stamp": "32b3e4a9323d56bc",
+      "source": "assets/models/desk.glb"
+    },
+    {
+      "family": "scene",
+      "id": "assets/models/lampRoundFloor",
+      "file": "scene.lampRoundFloor.be2963df.fsceneb",
+      "stamp": "07234fd4740a6c14",
+      "source": "assets/models/lampRoundFloor.glb"
+    },
+    {
+      "family": "scene",
+      "id": "assets/models/lampSquareTable",
+      "file": "scene.lampSquareTable.2f23d7a0.fsceneb",
+      "stamp": "3dcaf59d529d0e8e",
+      "source": "assets/models/lampSquareTable.glb"
+    },
+    {
+      "family": "scene",
+      "id": "assets/models/loungeChair",
+      "file": "scene.loungeChair.bb6af45c.fsceneb",
+      "stamp": "b44147b4849172d0",
+      "source": "assets/models/loungeChair.glb"
+    },
+    {
+      "family": "scene",
+      "id": "assets/models/pottedPlant",
+      "file": "scene.pottedPlant.5d385105.fsceneb",
+      "stamp": "3fb8e5e2e0c1deaf",
+      "source": "assets/models/pottedPlant.glb"
+    },
+    {
+      "family": "scene",
+      "id": "assets/models/radio",
+      "file": "scene.radio.18265c70.fsceneb",
+      "stamp": "ca7ee7821b8ef019",
+      "source": "assets/models/radio.glb"
+    },
+    {
+      "family": "scene",
+      "id": "assets/models/rugRectangle",
+      "file": "scene.rugRectangle.ca4cf1b0.fsceneb",
+      "stamp": "181434cc9e652d2d",
+      "source": "assets/models/rugRectangle.glb"
+    }
+  ]
+}
