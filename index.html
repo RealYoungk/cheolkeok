@@ -1,95 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="/cheolkeok/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="방 안의 단서를 모아 탈출하는 3D 방탈출 게임.">
-
-  <!--
-    Uncomment the tag below to lay the app out underneath the parts of the
-    screen that the device obstructs, such as a display cutout, the rounded
-    corners of the screen, or a home indicator.
-
-    Without it, the browser keeps the app clear of them, and `SafeArea` and
-    `MediaQuery.paddingOf` report no padding. With it, the app covers the whole
-    screen, and it is up to the app to keep its own content out of the way,
-    which is what `SafeArea` is for.
-  -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> -->
-
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="철컥! 방탈출">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>철컥! 방탈출</title>
-  <link rel="manifest" href="manifest.json">
-  <style>html,body{margin:0;height:100%;background:#0e1014}</style>
-</head>
-<body>
-  <!--
-    You can customize the "flutter_bootstrap.js" script.
-    This is useful to provide a custom configuration to the Flutter loader
-    or to give the user feedback during the initialization process.
-
-    For more details:
-    * https://docs.flutter.dev/platform-integration/web/initialization
-  -->
-  <script>
-    // 3D 그리기 연결(WebGL)이 끊기면 화면이 검게 남는다. 폰에서 다른 앱에 다녀오면 자주 끊긴다.
-    // 진행은 저장돼 있으니 다시 불러와 하던 방으로 돌아간다.
-    (function () {
-      if (typeof OffscreenCanvas === 'undefined') return;
-      var original = OffscreenCanvas.prototype.getContext;
-      var recovering = false;
-      function recover() {
-        if (recovering) return;
-        try {
-          // 불러오자마자 또 끊기는 기기에서 끝없이 되풀이하지 않는다.
-          var last = Number(sessionStorage.getItem('cheolkeok.recovered') || 0);
-          if (Date.now() - last < 15000) return;
-          sessionStorage.setItem('cheolkeok.recovered', String(Date.now()));
-        } catch (e) {}
-        recovering = true;
-        var url = new URL(location.href);
-        url.searchParams.set('resume', '1');
-        location.replace(url);
-      }
-      OffscreenCanvas.prototype.getContext = function (kind, attrs) {
-        var context = original.apply(this, arguments);
-        // 3D 장면이 쓰는 연결만 지켜본다 (화면 글씨를 그리는 연결은 엔진이 알아서 되살린다).
-        if (context && kind === 'webgl2' && attrs &&
-            attrs.preserveDrawingBuffer === true && attrs.depth === false &&
-            !context.__watched) {
-          context.__watched = true;
-          this.addEventListener('webglcontextlost', recover);
-          document.addEventListener('visibilitychange', function () {
-            if (!document.hidden && context.isContextLost()) recover();
-          });
-        }
-        return context;
-      };
-    })();
-  </script>
-  <script src="flutter_bootstrap.js" async></script>
-</body>
+<meta charset="utf-8">
+<title>철컥! 방탈출</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="canonical" href="https://cheolkeok.alfinder.kr/">
+<meta http-equiv="refresh" content="0; url=https://cheolkeok.alfinder.kr/">
+<script>location.replace("https://cheolkeok.alfinder.kr/");</script>
+<p>주소가 바뀌었어요. <a href="https://cheolkeok.alfinder.kr/">https://cheolkeok.alfinder.kr/</a></p>
 </html>
